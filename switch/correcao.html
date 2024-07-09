@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Medidas</title>
+</head>
+<body>
+  <h1>Conversor de Medidas</h1>
+  <script>
+const medida = parseFloat(prompt("Insira uma medida em metros:"))
+const unidade = prompt(
+  "Para qual unidade de medida deseja converter?" +
+  "\n1 - milímetros (mm)" +
+  "\n2 - centímetros (cm)" +
+  "\n3 - decímetros (dm)" +
+  "\n4 - decâmetros (dam)" +
+  "\n5 - hectômetro (hm)" +
+  "\n6 - quilômetro (km)"
+)
+switch (unidade) {
+  case "1":
+    alert("Resultado: " + medida + "m = " + medida * 1000 + "mm")
+  case "2":
+    alert("Resultado: " + medida + "m = " + medida * 100 + "cm")
+  case "3":
+    alert("Resultado: " + medida + "m = " + medida * 10 + "dm")
+  case "4":
+    alert("Resultado: " + medida + "m = " + medida / 10 + "dam")
+  case "5":
+    alert("Resultado: " + medida + "m = " + medida / 100 + "hm")
+  case "6":
+    alert("Resultado: " + medida + "m = " + medida / 1000 + "km")
+  default:
+    alert("Opção inválida!")
+    break
+}
+
+  </script>
+</body>
+</html>
